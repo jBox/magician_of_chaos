@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  #######################################
+  # Server
+  #######################################
+  moc:  
+    restart: unless-stopped
+    image: moc:onbuild
+    container_name: moc-container
+    ports:
+      - "10086:80"
+    environment:
+      - PORT=80
