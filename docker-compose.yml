@@ -9,6 +9,6 @@ services:
     image: moc:onbuild
     container_name: moc-container
     ports:
-      - "10086:80"
+      - "13086:80"
     environment:
       - PORT=80
